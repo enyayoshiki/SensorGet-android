@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AccelGet"></activity>
+        <activity android:name=".BataPika"></activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Bata_pika" />
+        <activity android:name=".AccelGet" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

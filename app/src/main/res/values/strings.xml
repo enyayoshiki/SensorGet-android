@@ -2,4 +2,6 @@
     <string name="app_name">SensorGet</string>
     <string name="sensorget_text">センサーゲット</string>
     <string name="accelsensor_text">加速度センサー</string>
+    <string name="batapika_menutext">バタッピカッ</string>
+    <string name="light">倒れると光リマス</string>
 </resources>

@@ -11,5 +11,10 @@
         android:title="@string/accelsensor_text"
         ></item>
 
+    <item
+        android:id="@+id/batapika_menu"
+        android:title="@string/batapika_menutext"
+        ></item>
+
 
 </menu>

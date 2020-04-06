@@ -40,6 +40,10 @@ class MainActivity : AppCompatActivity() {
              val intent = Intent(this,AccelGet::class.java)
                 startActivity(intent)
             }
+            R.id.batapika_menu -> {
+                val intent = Intent(this,BataPika::class.java)
+                startActivity(intent)
+            }
         }
         return super.onOptionsItemSelected(item)
     }
