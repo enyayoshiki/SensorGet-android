@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SensorGet</string>
+    <string name="sensorget_text">センサーゲット</string>
+    <string name="accelsensor_text">加速度センサー</string>
 </resources>
