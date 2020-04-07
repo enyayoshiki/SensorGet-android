@@ -4,4 +4,7 @@
     <string name="accelsensor_text">加速度センサー</string>
     <string name="batapika_menutext">バタッピカッ</string>
     <string name="light">倒れると光リマス</string>
+    <string name="service_batapika">サービス化(BataPika)</string>
+    <string name="start">Bata Pika 開始！！</string>
+    <string name="end">Bata Pika 終了！！</string>
 </resources>

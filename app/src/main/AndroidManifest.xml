@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BataPika"></activity>
+        <service
+            android:name=".TorchOnService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".ServiceBatapika" />
+        <activity android:name=".BataPika" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".Bata_pika" />
         <activity android:name=".AccelGet" />

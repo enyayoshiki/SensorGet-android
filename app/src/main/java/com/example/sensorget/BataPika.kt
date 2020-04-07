@@ -26,6 +26,7 @@ class BataPika : AppCompatActivity() ,SensorEventListener{
     private var lightOn : Boolean = false
 
 
+     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
      fun onSensorChenged(event: SensorEvent?){
         if (event == null)return
         if (event.sensor.type == Sensor.TYPE_ACCELEROMETER){
@@ -80,12 +81,13 @@ class BataPika : AppCompatActivity() ,SensorEventListener{
             }
         }
     }
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     private fun torchOn(){
         try {
         if(cameraID != null){
-                cameraManager.setTorchMode(cameraID,true)
+                cameraManager.setTorchMode(cameraID!!,true)
             } else{
-                cameraManager.setTorchMode(cameraID,false)
+            cameraID?.let { cameraManager.setTorchMode(it,false) }
             }
         }catch (e:CameraAccessException){
             e.printStackTrace()
@@ -123,7 +125,7 @@ class BataPika : AppCompatActivity() ,SensorEventListener{
     }
 }
 
-private fun Any.registerTorchCallback(torchCallback: CameraManager.TorchCallback) {
+fun Any.registerTorchCallback(torchCallback: CameraManager.TorchCallback) {
 
 }
 

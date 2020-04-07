@@ -15,6 +15,10 @@
         android:id="@+id/batapika_menu"
         android:title="@string/batapika_menutext"
         ></item>
+    <item
+        android:id="@+id/serviceBataPika"
+        android:title="@string/service_batapika"
+        ></item>
 
 
 </menu>
